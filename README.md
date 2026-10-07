@@ -55,7 +55,6 @@ spotify-clone/
 - 🔀 Shuffle and repeat modes
 - ❤️ Favorite songs
 - 🔍 Search functionality
-- 🎶 Playlist support
 
 ## 🤝 Contributing
 
