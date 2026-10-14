@@ -44,27 +44,57 @@ playmusic.forEach((element) =>{
         play.classList.add('fa-pause');
 
         let indexe = parseInt(e.target.id);
+        currentsong = indexe;
         audio.src = `Audio/${indexe}.mp3`;
         audio.currentTime = 0;
         audio.play();
     });
 });
 
-playnextsong = () =>{
-    let nextsong = (currentsong + 1) %playmusic.length;
-    currentsong = nextsong == 0 ? 14 : nextsong;
-        audio.src = `audio/${currentsong}.mp3`;
-        audio.currentTime = 0;
-        audio.play();
-}
-
-playprevsong = () =>{
-    let prevsong = (currentsong - 1) ;
-    currentsong = prevsong == 0 ? 14 : prevsong;
-        audio.src = `audio/${currentsong}.mp3`;
-        audio.currentTime = 0;
-        audio.play();
-}
-
 let forward = document.getElementById('forward');
 let backward = document.getElementById('backward');
+
+function playnextsong() {
+    currentsong++;
+
+    if(currentsong > 14){
+        currentsong =1;
+    }
+
+    audio.src = `audio/${currentsong}.mp3`;
+    audio.currentTime = 0;
+    audio.play();
+
+    play.classList.remove('fa-play');
+    play.classList.add('fa-pause');
+    makeallplay();
+}
+
+function playprevsong() {
+    if (currentsong == 1) {
+        alert("This is th first song");
+        return;
+    }
+
+
+    currentsong--;
+
+    
+
+    audio.src = `audio/${currentsong}.mp3`;
+    audio.currentTime = 0;
+    audio.play();
+
+    play.classList.remove('fa-play');
+    play.classList.add('fa-pause');
+    makeallplay();
+}
+
+forward.addEventListener('click', playnextsong);
+backward.addEventListener('click', playprevsong);
+
+let pritam = document.getElementById("pritam");
+
+pritam.addEventListener("click", ()=> {
+    window.open("https://en.wikipedia.org/wiki/Pritam_Chakraborty", "_blank");
+})
