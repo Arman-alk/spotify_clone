@@ -1,0 +1,25 @@
+{
+  "name": "spotify_clone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arman-alk/spotify_clone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Arman-alk/spotify_clone/issues"
+  },
+  "homepage": "https://github.com/Arman-alk/spotify_clone#readme",
+  "dependencies": {
+    "ejs": "^7.0.1",
+    "express": "^5.3.0"
+  }
+}

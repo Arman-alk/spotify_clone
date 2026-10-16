@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/utility.css" class="css">
+</head>
+
+<body>
+    <nav>
+        <div class="left-half">
+            <div class="logo"><i class="fa-brands fa-spotify"></i></div>
+            <div class="home-icon"><i class="fa-regular fa-house"></i></div>
+            <div class="search-bar">
+                <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <input type="text" class="input-box" placeholder="Play What You Want To Play...">
+                <div class="browse"><i class="fa-solid fa-file"></i></div>
+            </div>
+        </div>
+        <div class="right-half">
+            <div class="right-half-1">
+                <p class="nav-text">Premioum</p>
+                <p class="nav-text">Support</p>
+                <p class="nav-text">Dowenload</p>
+            </div>
+            <div class="right-half-2">
+                <div class="nav-text"><i class="fa-solid fa-download"></i>Install App</div>
+                <div class="nav-text">Sign Up</div>
+                <button class="login-btn">Log in</button>
+            </div>
+        </div>
+    </nav>
+    <div class="middle">
+        <div class="left">
+            <div class="libray">
+                <div class="library">Your Library</div>
+                <button class="creat">+Creat</button>
+            </div>
+            <div class="play-list">
+                <div class="box1">
+                    <div class="box1-1">
+                        <span class="first-text">Creat Your first playlist</span><br>
+                        <span class="second-text">It's easy, we'll help you</span>
+                    </div>
+                    <form action="/playlists" method="post">
+                        <button type="submit" class="create-playlist-btn"> + creat playlist</button>
+                    </form>
+                </div>
+                <div class="box2">
+                    <div class="box2-1">
+                        <span class="first-text">Let's find some podcasts to follow</span><br>
+                        <span class="second-text">We'll Keep you updated on new episodes</span>
+                    </div>
+                    <button class="creat-playlist-1">Browse podcasts</button>
+                </div>
+            </div>
+            <div class="box3">
+                <div class="box3-1">
+                    <div class="legal">
+                        <div class="lgal1"><a href="https://www.spotify.com/in-en/legal/"><span
+                                    class="lgal1">Legal</span></a></div>
+                        <div class="lgal1"><a href="https://www.spotify.com/in-en/safetyandprivacy/"><span
+                                    class="lgal1">Safety&PravacyCenter</span></a></div>
+                        <div class="lgal1"><a href="https://www.spotify.com/in-en/legal/privacy-policy/"><span
+                                    class="lgal1">Privacy Police</span></a></div>
+                        <div class="lgal1"><a href="https://www.spotify.com/in-en/legal/cookies-policy/"><span
+                                    class="lgal1">Cookies</span></a></div>
+                        <div class="lgal1"><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"><span
+                                    class="lgal1">AboutAds</span></a></div>
+                        <div class="lgal1"><a href="https://www.spotify.com/in-en/accessibility/"><span
+                                    class="lgal1">Accessibility</span></a></div>
+
+                    </div>
+                    <a href="https://www.spotify.com/in-en/legal/cookies-policy/"><span
+                            class="cookies">Cookies</span></a>
+                </div>
+                <div class="box3-2">
+                    <button class="english">
+                        <div class="earth"><i class="fa-solid fa-globe"></i></div>
+                        <span>English</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="trending-song">
+                <div class="song">
+                    <h2>
+                        <span>
+                            <a href="https://open.spotify.com/section/0JQ5DB5E8N831KzFzsBBQ2"><span class="trend">
+                                    Trending songs</span></a>
+                        </span>
+                    </h2>
+                </div>
+                <div class="show-all">
+                    <a href="https://open.spotify.com/section/0JQ5DB5E8N831KzFzsBBQ2">
+                        <span class="show">show-all</span>
+                    </a>
+                </div>
+            </div>
+            <div class="container1">
+                <div class="card">
+                    <div class="kalank">
+                        <img src="https://i.scdn.co/image/ab67616d00001e029eb6c1861d8c058e7052df1e" height="160px"
+                            width="150px">
+                        <div class="circle">
+                            <i id="1" class="playmusic fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="title-track">
+                        <p><a
+                            href="https://open.spotify.com/album/6oGrVe1XTTji8TBQh5eJit?highlight=spotify:track:7G5wpuR61ABrT7R1snos7C"><span
+                                    class="text">Kalank-Title Track</span></a></p>
+                        <p class="text1"><a href="https://open.spotify.com/artist/1wRPtKGflJrBx9BmLsSwlU">Pritam</a>, <a
+                                href="https://open.spotify.com/artist/4YRxDV8wJFPHPTeXepOstw">Arijit Sing</a></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="kalank">
+                        <img src="https://i.scdn.co/image/ab67616d00001e02712701c5e263efc8726b1464" height="160px"
+                            width="150px">
+                        <div class="circle">
+                            <i id="15" class="playmusic fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="title-track">
+                        <p><a
+                                href="https://open.spotify.com/album/6oGrVe1XTTji8TBQh5eJit?highlight=spotify:track:7G5wpuR61ABrT7R1snos7C"><span
+                                    class="text">Heat Wavees</span></a></p>
+                        <p class="text1"><a href="https://open.spotify.com/artist/1wRPtKGflJrBx9BmLsSwlU">Glass
+                                Animal</a>, <a href="https://open.spotify.com/artist/4YRxDV8wJFPHPTeXepOstw"></a></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="kalank">
+                        <img src="https://i.scdn.co/image/ab67616d00001e021c0cc84fdea1831e2eff94df" height="160px"
+                            width="150px">
+                        <div class="circle">
+                            <i id="2" class="playmusic fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="title-track">
+                        <p><a
+                                href="https://open.spotify.com/album/6oGrVe1XTTji8TBQh5eJit?highlight=spotify:track:7G5wpuR61ABrT7R1snos7C"><span
+                                    class="text">Chand Mere Dil-Title Track</span></a></p>
+                        <p class="text1"><a
+                                href="https://open.spotify.com/artist/1wRPtKGflJrBx9BmLsSwlU">Sachin-Jigar</a>, <a
+                                href="https://open.spotify.com/artist/4YRxDV8wJFPHPTeXepOstw">Faheem Abdullah</a></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="kalank">
+                        <img src="https://i.scdn.co/image/ab67616d00001e0218eb0ef68ccb1a6ad57b46a6" height="160px"
+                            width="150px">
+                        <div class="circle">
+                            <i id="3" class="playmusic fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="title-track">
+                        <p><a
+                                href="https://open.spotify.com/album/6oGrVe1XTTji8TBQh5eJit?highlight=spotify:track:7G5wpuR61ABrT7R1snos7C"><span
+                                    class="text">Only Mines</span></a></p>
+                        <p class="text1"><a href="https://open.spotify.com/artist/1wRPtKGflJrBx9BmLsSwlU">Darshall
+                                Ravel</a>, <a href="https://open.spotify.com/artist/4YRxDV8wJFPHPTeXepOstw">siddharth
+                                Amit Bhavsar</a></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="kalank">
+                        <img src="https://i.scdn.co/image/ab67616d00001e02530e627d6b4aced65e1ccf4a" height="160px"
+                            width="150px">
+                        <div class="circle">
+                            <i id="4" class="playmusic fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="title-track">
+                        <p><a
+                                href="https://open.spotify.com/album/6oGrVe1XTTji8TBQh5eJit?highlight=spotify:track:7G5wpuR61ABrT7R1snos7C"><span
+                                    class="text">Amsham - അംശം</span></a></p>
+                        <p class="text1"><a
+                                href="https://open.spotify.com/artist/1wRPtKGflJrBx9BmLsSwlU">Aksomaniac</a>, <a
+                                href="https://open.spotify.com/artist/4YRxDV8wJFPHPTeXepOstw">M.H.R</a></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="kalank">
+                        <img src="sushant.webp" height="160px"
+                            width="150px">
+                        <div class="circle">
+                            <i id="5" class="playmusic fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="title-track">
+                        <p><a
+                                href="https://open.spotify.com/album/6oGrVe1XTTji8TBQh5eJit?highlight=spotify:track:7G5wpuR61ABrT7R1snos7C"><span
+                                    class="text">Khairiyat</span></a></p>
+                        <p class="text1"><a href="https://open.spotify.com/artist/1wRPtKGflJrBx9BmLsSwlU">Sushant
+                                singh</a>, <a href="https://open.spotify.com/artist/4YRxDV8wJFPHPTeXepOstw"></a></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="kalank">
+                        <img src="https://i.scdn.co/image/ab67616d00001e02712701c5e263efc8726b1464" height="160px"
+                            width="150px">
+                        <div class="circle">
+                            <i id="6" class="playmusic fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="title-track">
+                        <p><a
+                                href="https://open.spotify.com/album/6oGrVe1XTTji8TBQh5eJit?highlight=spotify:track:7G5wpuR61ABrT7R1snos7C"><span
+                                    class="text">Heat Wavees</span></a></p>
+                        <p class="text1"><a href="https://open.spotify.com/artist/1wRPtKGflJrBx9BmLsSwlU">Glass
+                                Animal</a>, <a href="https://open.spotify.com/artist/4YRxDV8wJFPHPTeXepOstw"></a></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="kalank">
+                        <img src="https://i.scdn.co/image/ab67616d00001e02712701c5e263efc8726b1464" height="160px"
+                            width="150px">
+                        <div class="circle">
+                            <i id="7" class="playmusic fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="title-track">
+                        <p><a
+                                href="https://open.spotify.com/album/6oGrVe1XTTji8TBQh5eJit?highlight=spotify:track:7G5wpuR61ABrT7R1snos7C"><span
+                                    class="text">Heat Wavees</span></a></p>
+                        <p class="text1"><a href="https://open.spotify.com/artist/1wRPtKGflJrBx9BmLsSwlU">Glass
+                                Animal</a>, <a href="https://open.spotify.com/artist/4YRxDV8wJFPHPTeXepOstw"></a></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="kalank">
+                        <img src="https://i.scdn.co/image/ab67616d00001e02712701c5e263efc8726b1464" height="160px"
+                            width="150px">
+                        <div class="circle">
+                            <i id="8" class="playmusic fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="title-track">
+                        <p><a
+                                href="https://open.spotify.com/album/6oGrVe1XTTji8TBQh5eJit?highlight=spotify:track:7G5wpuR61ABrT7R1snos7C"><span
+                                    class="text">Heat Wavees</span></a></p>
+                        <p class="text1"><a href="https://open.spotify.com/artist/1wRPtKGflJrBx9BmLsSwlU">Glass
+                                Animal</a>, <a href="https://open.spotify.com/artist/4YRxDV8wJFPHPTeXepOstw"></a></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="kalank">
+                        <img src="https://i.scdn.co/image/ab67616d00001e02712701c5e263efc8726b1464" height="160px"
+                            width="150px">
+                        <div class="circle">
+                            <i id="9" class="playmusic fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="title-track">
+                        <p><a
+                                href="https://open.spotify.com/album/6oGrVe1XTTji8TBQh5eJit?highlight=spotify:track:7G5wpuR61ABrT7R1snos7C"><span
+                                    class="text">Heat Wavees</span></a></p>
+                        <p class="text1"><a href="https://open.spotify.com/artist/1wRPtKGflJrBx9BmLsSwlU">Glass
+                                Animal</a>, <a href="https://open.spotify.com/artist/4YRxDV8wJFPHPTeXepOstw"></a></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="kalank">
+                        <img src="https://i.scdn.co/image/ab67616d00001e02712701c5e263efc8726b1464" height="160px"
+                            width="150px">
+                        <div class="circle">
+                            <i id="10" class="playmusic fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="title-track">
+                        <p><a
+                                href="https://open.spotify.com/album/6oGrVe1XTTji8TBQh5eJit?highlight=spotify:track:7G5wpuR61ABrT7R1snos7C"><span
+                                    class="text">Heat Wavees</span></a></p>
+                        <p class="text1"><a href="https://open.spotify.com/artist/1wRPtKGflJrBx9BmLsSwlU">Glass
+                                Animal</a>, <a href="https://open.spotify.com/artist/4YRxDV8wJFPHPTeXepOstw"></a></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="kalank">
+                        <img src="https://i.scdn.co/image/ab67616d00001e02712701c5e263efc8726b1464" height="160px"
+                            width="150px">
+                        <div class="circle">
+                            <i id="11" class="playmusic fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="title-track">
+                        <p><a
+                                href="https://open.spotify.com/album/6oGrVe1XTTji8TBQh5eJit?highlight=spotify:track:7G5wpuR61ABrT7R1snos7C"><span
+                                    class="text">Heat Wavees</span></a></p>
+                        <p class="text1"><a href="https://open.spotify.com/artist/1wRPtKGflJrBx9BmLsSwlU">Glass
+                                Animal</a>, <a href="https://open.spotify.com/artist/4YRxDV8wJFPHPTeXepOstw"></a></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="kalank">
+                        <img src="https://i.scdn.co/image/ab67616d00001e02712701c5e263efc8726b1464" height="160px"
+                            width="150px">
+                        <div class="circle">
+                            <i id="12" class="playmusic fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="title-track">
+                        <p><a
+                                href="https://open.spotify.com/album/6oGrVe1XTTji8TBQh5eJit?highlight=spotify:track:7G5wpuR61ABrT7R1snos7C"><span
+                                    class="text">Heat Wavees</span></a></p>
+                        <p class="text1"><a href="https://open.spotify.com/artist/1wRPtKGflJrBx9BmLsSwlU">Glass
+                                Animal</a>, <a href="https://open.spotify.com/artist/4YRxDV8wJFPHPTeXepOstw"></a></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="kalank">
+                        <img src="https://i.scdn.co/image/ab67616d00001e02712701c5e263efc8726b1464" height="160px"
+                            width="150px">
+                        <div class="circle">
+                            <i id="13" class="playmusic fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="title-track">
+                        <p><a
+                                href="https://open.spotify.com/album/6oGrVe1XTTji8TBQh5eJit?highlight=spotify:track:7G5wpuR61ABrT7R1snos7C"><span
+                                    class="text">Heat Wavees</span></a></p>
+                        <p class="text1"><a href="https://open.spotify.com/artist/1wRPtKGflJrBx9BmLsSwlU">Glass
+                                Animal</a>, <a href="https://open.spotify.com/artist/4YRxDV8wJFPHPTeXepOstw"></a></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="kalank">
+                        <img src="https://i.scdn.co/image/ab67616d00001e02712701c5e263efc8726b1464" height="160px"
+                            width="150px">
+                        <div class="circle">
+                            <i id="14" class="playmusic fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="title-track">
+                        <p><a
+                                href="https://open.spotify.com/album/6oGrVe1XTTji8TBQh5eJit?highlight=spotify:track:7G5wpuR61ABrT7R1snos7C"><span
+                                    class="text">Heat Wavees</span></a></p>
+                        <p class="text1"><a href="https://open.spotify.com/artist/1wRPtKGflJrBx9BmLsSwlU">Glass
+                                Animal</a>, <a href="https://open.spotify.com/artist/4YRxDV8wJFPHPTeXepOstw"></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="trending-song">
+                <div class="song">
+                    <h2>
+                        <span>
+                            <a href="https://open.spotify.com/section/0JQ5DAnM3wGh0gz1MXnu3C"><span class="trend">
+                                Popular artist</span></a>
+                            </span>
+                        </h2>
+                    </div>
+                    <div class="show-all">
+                        <a href="https://open.spotify.com/section/0JQ5DAnM3wGh0gz1MXnu3C">
+                            <span class="show">show-all</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="container2">
+                <div class="card" id="pritam">
+                    <div class="kalank">
+                        <img src="https://i.scdn.co/image/ab67616100005174b19af0ea736c6228d6eb539c" class="pritam"
+                            height="160px" width="150px">
+                        <div class="circle">
+                            <i id="1" class="playmusic fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="title-track">
+                        <p><a
+                                href="https://open.spotify.com/album/6oGrVe1XTTji8TBQh5eJit?highlight=spotify:track:7G5wpuR61ABrT7R1snos7C">
+                                <span class="text">Pritam</span></a></p>
+                        <p class="text1"><a
+                                href="https://open.spotify.com/album/6oGrVe1XTTji8TBQh5eJit?highlight=spotify:track:7G5wpuR61ABrT7R1snos7C">Pritam</a>,
+                            <a href="">Artist</a></p>
+                    </div>
+                </div>
+                <div class="card" id="rahman">
+                    <div class="kalank">
+                        <img src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca" class="pritam"
+                            height="160px" width="150px">
+                        <div class="circle">
+                            <i id="1" class="playmusic fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="title-track">
+                        <p><a
+                                href="https://open.spotify.com/artist/1mYsTxnqsietFxj1OgoGbGC">
+                                <span class="text">A.R.Rahman</span></a></p>
+                        <p class="text1"><a
+                                href="https://open.spotify.com/artist/1mYsTxnqsietFxj1OgoGbG"></a>,
+                            <a href="">Artist</a></p>
+                    </div>
+                </div>
+                <div class="card" id="arjit">
+                    <div class="kalank">
+                        <img src="https://i.scdn.co/image/ab676161000051745ba2d75eb08a2d672f9b69b7" class="pritam"
+                            height="160px" width="150px">
+                        <div class="circle">
+                            <i id="1" class="playmusic fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="title-track">
+                        <p><a
+                                href="https://open.spotify.com/artist/4YRxDV8wJFPHPTeXepOstw">
+                                <span class="text">Arjit Singh</span></a></p>
+                        <p class="text1"><a
+                                href="https://open.spotify.com/artist/4YRxDV8wJFPHPTeXepOstw"></a>,
+                            <a href="https://open.spotify.com/artist/4YRxDV8wJFPHPTeXepOstw">Artist</a></p>
+                    </div>
+                </div>
+                <div class="card" id="sachin">
+                    <div class="kalank">
+                        <img src="https://i.scdn.co/image/ab67616100005174bb4064bef3a825344d5eb79e" class="pritam"
+                            height="160px" width="150px">
+                        <div class="circle">
+                            <i id="1" class="playmusic fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="title-track">
+                        <p><a
+                                href="https://open.spotify.com/artist/1mBydYMVBECdDmMfE2sEUO">
+                                <span class="text">Sachin-Jigar</span></a></p>
+                        <p class="text1"><a
+                                href=""></a>,
+                            <a href="https://open.spotify.com/artist/1mBydYMVBECdDmMfE2sEUO">Artist</a></p>
+                    </div>
+                </div>
+                <div class="card" id="vishal">
+                    <div class="kalank">
+                        <img src="https://i.scdn.co/image/ab6761610000517490b6c3d093f9b02aad628eaf" class="pritam"
+                            height="160px" width="150px">
+                        <div class="circle">
+                            <i id="1" class="playmusic fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="title-track">
+                        <p><a
+                                href="https://open.spotify.com/artist/6Mv8GjQa7LKUGCAqa9qqdb">
+                                <span class="text">Vishal Shekhar</span></a></p>
+                        <p class="text1"><a
+                                href=""></a>,
+                            <a href="https://open.spotify.com/artist/6Mv8GjQa7LKUGCAqa9qqdb">Artist</a></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="kalank" id="atif">
+                        <img src="https://i.scdn.co/image/ab67616100005174c40600e02356cc86f0debe84" class="pritam"
+                            height="160px" width="150px">
+                        <div class="circle">
+                            <i id="1" class="playmusic fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="title-track">
+                        <p><a
+                                href="https://open.spotify.com/artist/2oSONSC9zQ4UonDKnLqksx">
+                                <span class="text">Atif Islam</span></a></p>
+                        <p class="text1"><a
+                                href=""></a>,
+                            <a href="https://open.spotify.com/artist/2oSONSC9zQ4UonDKnLqksx">Artist</a></p>
+                    </div>
+                </div>
+                <div class="card" id="anirudh">
+                    <div class="kalank">
+                        <img src="https://i.scdn.co/image/ab676161000051740f0be2054fe9594026a6b843" class="pritam"
+                            height="160px" width="150px">
+                        <div class="circle">
+                            <i id="1" class="playmusic fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="title-track">
+                        <p><a
+                                href="https://open.spotify.com/artist/4zCH9qm4R2DADamUHMCa6O">
+                                <span class="text">Anirudh Ravichandra</span></a></p>
+                        <p class="text1"><a
+                                href="">Pritam</a>,
+                            <a href="https://open.spotify.com/artist/4zCH9qm4R2DADamUHMCa6O">Artist</a></p>
+                    </div>
+                </div>
+                <div class="card" id="udit">
+                    <div class="kalank">
+                        <img src="https://i.scdn.co/image/ab676161000051748de0e6e7e55d7773931ab7f4" class="pritam"
+                            height="160px" width="150px">
+                        <div class="circle">
+                            <i id="1" class="playmusic fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="title-track">
+                        <p><a
+                                href="https://open.spotify.com/artist/70B80Lwx2sxti0M1Ng9e8K">
+                                <span class="text">Udit Narayan</span></a></p>
+                        <p class="text1"><a
+                                href=""></a>,
+                            <a href="https://open.spotify.com/artist/70B80Lwx2sxti0M1Ng9e8K">Artist</a></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="player-bar">
+
+        <div>
+            <img src="" alt="" class="sr">
+            <div class="img-title-info"></div>
+            <div class="img-des-info"></div>
+        </div>
+        <div class="music-controler">
+            <div class="player">
+                <div ><i id="shuffle" class="player-btn fa-solid fa-shuffle"></i></div>
+                <div ><i id="backward" class="player-btn fa-solid fa-backward"></i></div>
+                <div ><i id="play" class="player-btn fa-solid fa-play"></i></div>
+                <div ><i id="forward"class="player-btn fa-solid fa-forward"></i></div>
+                <div id="repeat"><i class="player-btn fa-solid fa-repeat"></i></div>
+            </div>
+            <div>
+                <input type="range" id="progresber" min="0" max="100" value="0">
+            </div>
+        </div>
+        <div></div>
+    </div>
+    <script src="/index.js"></script>
+</body>
+
+</html>
