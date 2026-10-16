@@ -1,19 +1,34 @@
 const express = require("express");
+const path = require("path");
+
 const app = express();
 
-let port = 3000;
+app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "views"));
 
-app.use(express.static("public"));
+app.use(express.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, "public")));
 
-app.get("/", (req,res) =>{
-    res.send("workking")
-})
+let playlists = [];
 
-app.get("/listings", (req,res) =>{
-    res.render("index.ejs");
-})
+app.get("/", (req, res) => {
+    res.render("index");
+});
 
+app.post("/playlist", (req, res) => {
+    const playlistName = req.body.playlistName;
 
-app.listen(3000, () =>{
-    console.log("app is listening..")
-})
+    if (playlistName && playlistName.trim() !== "") {
+        playlists.push(playlistName.trim());
+    }
+
+    res.redirect("/playlist");
+});
+
+app.get("/playlist", (req, res) => {
+    res.render("playlist", { playlists });
+});
+
+app.listen(3000, () => {
+    console.log("Server running at http://localhost:3000");
+});

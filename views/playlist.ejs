@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my playlist</title>
+</head>
+<body>
+    <h1>My playlist</h1>
+
+    <% if(playlists.length === 0) { %>
+        <p>No playlist created yet.</p>
+    <% } %>
+
+    <ul>
+        <% playlists.forEach((playlist) => { %>
+            <li><%= playlist %></li>
+        <% }) %>
+    </ul>
+
+    <a href="/">Go Back</a>
+</body>
+</html>
